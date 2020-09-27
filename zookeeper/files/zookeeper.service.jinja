@@ -1,0 +1,19 @@
+[Unit]
+Description=ZooKeeper Daemon
+Documentation=http://zookeeper.apache.org
+Requires=network.target
+After=network.target
+
+[Service]
+Type=forking
+WorkingDirectory=/opt/apache-zookeeper-{{ pillar['zookeeper']['version'] }}-bin
+User={{ pillar['zookeeper']['user'] }}
+Group={{ pillar['zookeeper']['group'] }}
+ExecStart=/opt/apache-zookeeper-{{ pillar['zookeeper']['version'] }}-bin/bin/zkServer.sh start /opt/apache-zookeeper-{{ pillar['zookeeper']['version'] }}-bin/conf/zoo.cfg
+ExecStop=/opt/apache-zookeeper-{{ pillar['zookeeper']['version'] }}-bin/bin/zkServer.sh stop /opt/apache-zookeeper-{{ pillar['zookeeper']['version'] }}-bin/conf/zoo.cfg
+ExecReload=/opt/apache-zookeeper-{{ pillar['zookeeper']['version'] }}-bin/bin/zkServer.sh restart /opt/apache-zookeeper-{{ pillar['zookeeper']['version'] }}-bin/conf/zoo.cfg
+TimeoutSec=30
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
