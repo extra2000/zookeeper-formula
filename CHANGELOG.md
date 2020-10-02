@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.3](https://github.com/extra2000/zookeeper-formula/compare/v1.0.2...v1.0.3) (2020-10-02)
+
+
+### Continuous Integrations
+
+* **semantic-release:** Add fix type ([1cea183](https://github.com/extra2000/zookeeper-formula/commit/1cea183f2dd67337127994ab443899ade8fb0347))
+
 ### [1.0.2](https://github.com/extra2000/zookeeper-formula/compare/v1.0.1...v1.0.2) (2020-10-01)
 
 
