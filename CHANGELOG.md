@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.4](https://github.com/extra2000/zookeeper-formula/compare/v1.0.3...v1.0.4) (2020-10-04)
+
+
+### Continuous Integrations
+
+* **semantic-release:** Fix patch updates with BREAKING CHANGE doesn't trigger major release ([2a05e51](https://github.com/extra2000/zookeeper-formula/commit/2a05e518d7a300dd276c4956d1914305622ca22a))
+
 ### [1.0.3](https://github.com/extra2000/zookeeper-formula/compare/v1.0.2...v1.0.3) (2020-10-02)
 
 
